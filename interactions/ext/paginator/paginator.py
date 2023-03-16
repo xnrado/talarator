@@ -351,7 +351,22 @@ class Paginator(DictSerializerMixin):
         if self.author_only:
             boolean = ctx.user.id == self.ctx.user.id
         if not boolean:
-            await ctx.send("Talar!", ephemeral=True)
+            embed_author = EmbedAuthor(
+                name="Talar",
+                icon_url="https://i.imgur.com/kpZr5oC.png"
+            )
+            f1 = EmbedField(
+                name="Wygeneruj sobie własne!",
+                value="... połknie haczyk, spławik - i jeszcze kawałek wędki upierdoli!",
+                inline=True
+            )
+            embed = Embed(
+                title="Łapy precz!",
+                color=int("5C4033", 16),
+                author=embed_author,
+                fields=[f1]
+            )
+            await ctx.send(embeds=embed, ephemeral=True)
         return boolean
 
     def select_row(self) -> Optional[ActionRow]:
