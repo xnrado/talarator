@@ -4,16 +4,16 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="dinteractions_Talarator",
+    name="dinteractions_Paginator",
     version="2.0.2",
-    description="Official interactions.py talarator",
+    description="Official interactions.py paginator",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/xnrado/talarator",
-    author="XnraD",
-    author_email="xnrad123@gmail.com",
+    url="https://github.com/Toricane/dinteractions-Paginator",
+    author="Toricane",
+    author_email="prjwl028@gmail.com",
     license="GNU",
-    packages=["interactions.ext.talarator"],
+    packages=["interactions.ext.paginator"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "Development Status :: 5 - Production/Stable",
