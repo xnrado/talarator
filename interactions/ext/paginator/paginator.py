@@ -14,6 +14,8 @@ from interactions import (
     CommandContext,
     ComponentContext,
     Embed,
+    EmbedAuthor,
+    EmbedField,
     Emoji,
     Message,
     SelectMenu,
