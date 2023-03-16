@@ -351,7 +351,7 @@ class Paginator(DictSerializerMixin):
         if self.author_only:
             boolean = ctx.user.id == self.ctx.user.id
         if not boolean:
-            await ctx.send("This paginator is not for you!", ephemeral=True)
+            await ctx.send("Talar!", ephemeral=True)
         return boolean
 
     def select_row(self) -> Optional[ActionRow]:
